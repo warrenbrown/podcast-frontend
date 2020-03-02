@@ -7,6 +7,8 @@ import { HompageComponent } from './hompage/hompage.component';
 import { PodcastComponent } from './podcast/podcast.component';
 import { PodcastShowComponent } from './podcast-show/podcast-show.component';
 import { EpisodeDetailComponent } from './episode-detail/episode-detail.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { EpisodeDetailComponent } from './episode-detail/episode-detail.componen
     HompageComponent,
     PodcastComponent,
     PodcastShowComponent,
-    EpisodeDetailComponent
+    EpisodeDetailComponent,
+    DashboardComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

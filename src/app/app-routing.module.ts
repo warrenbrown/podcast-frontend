@@ -4,6 +4,7 @@ import { HompageComponent } from './hompage/hompage.component';
 import { PodcastComponent } from './podcast/podcast.component';
 import { PodcastShowComponent } from './podcast-show/podcast-show.component';
 import { EpisodeDetailComponent } from './episode-detail/episode-detail.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'podcast', component: PodcastComponent },
   { path: 'podcast/show', component: PodcastShowComponent },
   { path: 'episode/detail', component: EpisodeDetailComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
