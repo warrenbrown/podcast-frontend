@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HompageComponent } from './hompage/hompage.component';
 import { PodcastComponent } from './podcast/podcast.component';
 import { PodcastShowComponent } from './podcast-show/podcast-show.component';
+import { EpisodeDetailComponent } from './episode-detail/episode-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HompageComponent,
     PodcastComponent,
-    PodcastShowComponent
+    PodcastShowComponent,
+    EpisodeDetailComponent
   ],
   imports: [
     BrowserModule,
