@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HompageComponent } from './hompage/hompage.component';
 import { PodcastComponent } from './podcast/podcast.component';
+import { PodcastShowComponent } from './podcast-show/podcast-show.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HompageComponent,
-    PodcastComponent
+    PodcastComponent,
+    PodcastShowComponent
   ],
   imports: [
     BrowserModule,
