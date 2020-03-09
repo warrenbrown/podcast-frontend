@@ -3,7 +3,7 @@
         <a href="" id="logo">Podcast.FM</a>
         <nav>
             <ul>
-                <li><a routerLink="/podcast">Explore</a></li>
+                <li><a routerLink="/podcasts">Explore</a></li>
                 <li><a routerLink="/signin">Sign In</a></li>
                 <li><a href="#">Create a Podcast</a></li>
             </ul>
@@ -17,62 +17,16 @@
 
 <div id="podcasts" class="cf">
     <div class="wrapper">
-        <ul>
-            <a routerLink="/podcast/show">
+        <ul *ngFor="let podcast of podcasts">
+            <a routerLink="/podcasts/{{ podcast.id }}">
                 <li>
                     <img src="../../assets/images/podcast_redburd_logo.jpg" alt="Cards Corner">
                     <div class="podcast-overview">
-                        <h2>narwals podcast</h2>
+                        <h2>{{ podcast.title | uppercase }}</h2>
                         <p class="episode_count">1 Episode</p>
                     </div>
                 </li>
             </a>
-            <a href="#">
-                <li>
-                    <img src="../../assets/images/podcast3.jpg" alt="Cards Corner">
-                    <div class="podcast-overview">
-                        <h2>narwals podcast</h2>
-                        <p class="episode_count">1 Episode</p>
-                    </div>
-                </li>
-            </a>
-            <a href="#">
-                <li>
-                    <img src="../../assets/images/podcast.jpg" alt="Cards Corner">
-                    <div class="podcast-overview">
-                        <h2>narwals podcast</h2>
-                        <p class="episode_count">1 Episode</p>
-                    </div>
-                </li>
-            </a>
-            <a href="#">
-                <li>
-                    <img src="../../assets/images/podcast_lover.jpg" alt="Cards Corner">
-                    <div class="podcast-overview">
-                        <h2>narwals podcast</h2>
-                        <p class="episode_count">1 Episode</p>
-                    </div>
-                </li>
-            </a>
-            <a href="#">
-                <li>
-                    <img src="../../assets/images/podcast_redburd_logo.jpg" alt="Cards Corner">
-                    <div class="podcast-overview">
-                        <h2>narwals podcast</h2>
-                        <p class="episode_count">1 Episode</p>
-                    </div>
-                </li>
-            </a>
-            <a href="#">
-                <li>
-                    <img src="../../assets/images/podcast_redburd_logo.jpg" alt="Cards Corner">
-                    <div class="podcast-overview">
-                        <h2>narwals podcast</h2>
-                        <p class="episode_count">1 Episode</p>
-                    </div>
-                </li>
-            </a>
-
         </ul>
     </div>
 

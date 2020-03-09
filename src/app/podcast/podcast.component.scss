@@ -95,6 +95,10 @@ $dark: #22292e;
         span {
             margin: 0 .5rem;
         }
+        p {
+            color: lighten($dark, 45%);
+            text-decoration: none;
+        }
     }
     #episodes {
         padding: 3rem 0;

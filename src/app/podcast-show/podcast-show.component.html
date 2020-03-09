@@ -3,7 +3,7 @@
         <a href="" id="logo">Podcast.FM</a>
         <nav>
             <ul>
-                <li><a routerLink="/podcast">Explore</a></li>
+                <li><a routerLink="/podcasts">Explore</a></li>
                 <li><a routerLink="/signin">Sign In</a></li>
                 <li><a href="#">Create a Podcast</a></li>
             </ul>
@@ -14,7 +14,7 @@
 <div id="podcast_show">
     <div id="show_banner">
         <div class="wrapper_skinny">
-            <h1>The Cards Corner Podcast</h1>
+            <h1>{{ podcast.title }} Podcast</h1>
             <p class="description">
                 I'm baby lo-fi flexitarian cloud bread franzen, la croix slow-carb YOLO swag tofu marfa. Try-hard fanny pack 90's crucifix, wayfarers poutine pork belly taiyaki occupy cornhole sriracha vinyl post-ironic roof party. Street art chartreuse next level hammock farm-to-table twee af. Jean shorts cloud bread subway tile, four loko hammock
             </p>
@@ -24,68 +24,20 @@
         </div>
     </div>
     <div id="bread_crumb">
-        <a href="#">
-            Podcast
-            <span>/</span>
-            Cards Corner Podcast
-        </a>
+        <a routerLink="/podcasts">Podcasts</a><span> / </span><p>{{ podcast.title }} Podcast</p>
+
     </div>
     <div id="episodes">
         <div class="wrapper_skinny">
-            <ul class="cf">
+            <ul class="cf"  *ngFor="let episode of episodes">
                 <li class="cf">
                     <div class="episode_thumbnail">
-                        <a href="">
+                        <a routerLink="episode/{{ episode.id }}">
                             <img src="https://picsum.photos/150/150" alt="">
                         </a>
                     </div>
                     <div class="episode_overview">
-                        <h2><a routerLink="/episode/detail">Podcast Title</a></h2>
-                        <p class="description">
-                            I'm baby lo-fi flexitarian cloud bread franzen,
-                             la croix slow-carb YOLO swag tofu marfa. Try-hard
-                              fanny pack 90's crucifix, wayfarers poutine pork
-                        </p>
-                    </div>
-                </li>
-                <li class="cf">
-                    <div class="episode_thumbnail">
-                        <a href="">
-                            <img src="https://picsum.photos/150/150" alt="">
-                        </a>
-                    </div>
-                    <div class="episode_overview">
-                        <h2><a routerLink="/episode/detail">Podcast Title</a></h2>
-                        <p class="description">
-                            I'm baby lo-fi flexitarian cloud bread franzen,
-                             la croix slow-carb YOLO swag tofu marfa. Try-hard
-                              fanny pack 90's crucifix, wayfarers poutine pork
-                        </p>
-                    </div>
-                </li>
-                <li class="cf">
-                    <div class="episode_thumbnail">
-                        <a href="">
-                            <img src="https://picsum.photos/150/150" alt="">
-                        </a>
-                    </div>
-                    <div class="episode_overview">
-                        <h2><a routerLink="/episode/detail">Podcast Title</a></h2>
-                        <p class="description">
-                            I'm baby lo-fi flexitarian cloud bread franzen,
-                             la croix slow-carb YOLO swag tofu marfa. Try-hard
-                              fanny pack 90's crucifix, wayfarers poutine pork
-                        </p>
-                    </div>
-                </li>
-                <li class="cf">
-                    <div class="episode_thumbnail">
-                        <a href="">
-                            <img src="https://picsum.photos/150/150" alt="">
-                        </a>
-                    </div>
-                    <div class="episode_overview">
-                        <h2><a routerLink="/episode/detail">Podcast Title</a></h2>
+                        <h2><a routerLink="episode/{{ episode.id }}">{{ episode.title }}</a></h2>
                         <p class="description">
                             I'm baby lo-fi flexitarian cloud bread franzen,
                              la croix slow-carb YOLO swag tofu marfa. Try-hard

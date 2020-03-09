@@ -1,0 +1,8 @@
+<h1>Create a Podcast</h1>
+<div class="wrapper_skinny">
+    <form [formGroup]="podcastForm" (ngSubmit)="createPodcast()">
+        <input type="text" placeholder="Title" formControlName="title">
+        <input type="text" placeholder="Description" formControlName="description">
+        <input type="submit" class="button button_highlight"value="Create Podcast">
+    </form>
+</div>

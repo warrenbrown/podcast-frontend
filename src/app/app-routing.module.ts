@@ -7,14 +7,16 @@ import { EpisodeDetailComponent } from './episode-detail/episode-detail.componen
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignupComponent } from './signup/signup.component';
+import { PodcastNewComponent } from './podcast-new/podcast-new.component';
 
 
 const routes: Routes = [
   { path: 'home', component: HompageComponent },
-  { path: 'podcast', component: PodcastComponent },
-  { path: 'podcast/show', component: PodcastShowComponent },
-  { path: 'episode/detail', component: EpisodeDetailComponent },
+  { path: 'podcasts', component: PodcastComponent },
+  { path: 'podcasts/:id', component: PodcastShowComponent },
+  { path: 'podcasts/:id/episode/:id', component: EpisodeDetailComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'podcasts/new', component: PodcastNewComponent },
   { path: 'signin', component: SignInComponent },
   { path: 'signup', component: SignupComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
